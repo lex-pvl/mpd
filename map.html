@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Metropolitan Premium Properties</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/ion.rangeSlider.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="https://use.fontawesome.com/399f86a93c.js"></script>
+
+</head>
+<body>
+  <header class="pageHeader">
+    <div class="container">
+      <div class="logoContainer">
+        <img src="images/logo-black.svg">
+      </div>
+      <div class="menusContainer">
+        <a href="#" class="menuItem">Buy</a>
+        <a href="#" class="menuItem">Sell</a>
+        <a href="#" class="menuItem">Rent</a>
+      </div>
+      <div class="langContainer">
+        <a href="#" class="langItem active">EN</a>
+        <div class="langSlash"></div>
+        <a href="#" class="langItem">العربية‏</a>
+        <div class="langSlash"></div>
+        <a href="#" class="langItem">РYC</a>
+        <div class="contactContainer">
+         <img src="images/call.svg" style="width: 17px;">
+         <span>+971 4 360 5561</span>
+       </div>
+     </div>
+     <div class="btnContainer">
+       <a href="#" class="sellPropertyBtn">SEARCH</a>
+     </div>
+   </div>
+ </header>
+
+ <div class="pageContainer">
+   <div class="container">
+     <div class="pageSearch">
+      <form>
+        <div class="pageInputCont">
+          <img src="images/locationicon.svg" class="locationIcon">
+          <select name="location" class="location-select form-control selectField" multiple="multiple">
+            <option value="">Akoya Oxygen</option>
+            <option value="">Al Bada</option>
+            <option value="">Al Barsha</option>
+            <option value="">Al Hamriya</option>
+            <option value="">Al Hudaiba</option>
+            <option value="">Al Jaddaf</option>
+            <option value="">Al Jafilia</option>
+            <option value="">Al Kabir</option>
+            <option value="">Al Karama</option>
+            <option value="">Al Kefaf</option>
+            <option value="">Al Manara</option>
+            <option value="">Al Mankhool</option>
+            <option value="">Al Markada</option>
+            <option value="">Al Quoz</option>
+            <option value="">Al Rifa</option>
+            <option value="">Al Satwa</option>
+            <option value="">Al Shindagha</option>
+            <option value="">Al Souk</option>
+            <option value="">Al Sufouh</option>
+            <option value="">Al Wasl</option>
+            <option value="">Arabian Ranches</option>
+            <option value="">Bluewaters Island</option>
+            <option value="">Bu Kadra</option>
+            <option value="">Business Bay</option>
+            <option value="">Business Bay</option>
+            <option value="">Damac Hills</option>
+            <option value="">DIFC</option>
+            <option value="">Downtown Dubai</option>
+            <option value="">Dubai Creek Harbour</option>
+            <option value="">Dubai Hills Estate</option>
+            <option value="">Dubai International City</option>
+            <option value="">Dubai Land</option>
+            <option value="">Dubai Marina</option>
+            <option value="">Dubai Marina</option>
+            <option value="">Dubai South</option>
+            <option value="">Emaar South</option>
+            <option value="">Emirates Hills</option>
+            <option value="">Emaar Beachfront</option>
+            <option value="">Jebel Ali</option>
+            <option value="">Jumeirah</option>
+            <option value="">Jumeirah Beach Residence</option>
+            <option value="">Jumeirah Golf Estates</option>
+            <option value="">Jumeirah Islands</option>
+            <option value="">Jumeirah Lake Towers</option>
+            <option value="">Jumeirah Triangle</option>
+            <option value="">Jumeirah Village Circle</option>
+            <option value="">Mohammad Bin Rashid Al Maktoum City</option>
+            <option value="">Nad Al Sheba</option>
+            <option value="">Oud Metha</option>
+            <option value="">Palm Jumeirah</option>
+            <option value="">Port Rashid</option>
+            <option value="">Ras Al Khor</option>
+            <option value="">Ras Al Khor Industrial Area</option>
+            <option value="">Town Square</option>
+            <option value="">Trade Centre 1</option>
+            <option value="">Trade Centre 2</option>
+            <option value="">Umm Al Sheif</option>
+            <option value="">Umm Hurair</option>
+            <option value="">Umm Suqeim</option>
+            <option value="">Zabeel</option>
+          </select>
+        </div>
+        <div class="pageInputCont">
+          <select class="search-select form-control pageSelectField" name="PropertyType">
+            <option>Property Type</option> 
+            <option>Apartment</option> 
+            <option>Villa</option> 
+            <option>Townhouse</option>
+            <option>Penthouse</option>
+            <option>Whole Building</option>
+            <option>Land</option>
+            <option>Hotel Apartment</option> 
+          </select>
+        </div>
+
+        <div class="pageInputCont">
+          <input type="text" class="priceRange" name="my_range" value="">
+        </div>
+
+        <div class="pageInputCont">
+          <select class="search-select form-control pageSelectField" name="PropertyType">
+            <option>Min. Bedroom</option> 
+            <option>Studio</option> 
+            <option>1 Bedroom</option> 
+            <option>2 Bedrooms</option>
+            <option>3 Bedrooms</option>
+            <option>4 Bedrooms</option>
+            <option>5 Bedrooms</option>
+            <option>6 Bedrooms</option>
+            <option>7+ Bedrooms</option> 
+          </select>
+        </div>
+
+        <div class="pageInputCont">
+          <select class="search-select form-control pageSelectField" name="PropertyType">
+            <option>Max. Bedroom</option> 
+            <option>Studio</option> 
+            <option>1 Bedroom</option> 
+            <option>2 Bedrooms</option>
+            <option>3 Bedrooms</option>
+            <option>4 Bedrooms</option>
+            <option>5 Bedrooms</option>
+            <option>6 Bedrooms</option>
+            <option>7+ Bedrooms</option> 
+          </select>
+        </div>
+
+        <a href="#" class="filterBtn">Filters <img src="images/filter.svg"></a>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <div class="pageSearchB">
+     <span>Sort by</span>
+     <div class="pageInputCont">
+      <select class="form-control pageSelectSort" name="sortby">
+        <option>Recommended</option> 
+        <option>Option 1</option> 
+        <option>Option 2</option> 
+        <option>Option 3</option>  
+      </select>
+    </div>
+    <a href="#" class="showmap">HIDE MAP <img src="images/map.svg"></a>
+  </div>
+</div>
+</div>
+<div class="featureProjects" style="padding-top: 0px;">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-8">
+    <div class="row propertiesRow" style="padding-top: 0px;">
+     <div class="col-md-6">
+      <div class="projectContainer">
+        <div class="imageContainer">
+          <a href="#">
+           <img src="images/property1.png">
+           <div class="projectImgText">
+            <div class="projectImgTextHCont">
+              <h3>District One</h3>
+              <div class="hslash"></div>
+            </div>
+            <div class="propertyDescContainer bounceInUp">
+              <p class="propertyDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+              <div class="viewMoreContainer">
+                <span class="viewMore">VIEW MORE</span>
+                <img src="images/rightarrow.svg" class="viewMoreArrow">
+              </div>  
+            </div>
+          </div>
+        </a>
+      </div> 
+      <div class="propertyDetails">
+       <div class="pd1">
+         <div class="pd1left">
+          <img src="images/type.svg">
+          <span>Apartments</span>
+        </div>
+        <div class="pd1Right">
+          <img src="images/area.svg">
+          <span>890-2140 SQF</span>
+        </div>
+      </div>
+      <div class="pd1">
+       <div class="pd1left">
+        <img src="images/location.svg">
+        <span>Meydan</span>
+      </div>
+      <div class="pd1Right">
+        <img src="images/price.svg">
+        <span>AED 1.189.000</span>
+      </div>
+    </div>
+    <div class="pd2">
+     <div class="pd1left">
+      <img src="images/bed.svg">
+      <span>1-3 Bedroom</span>
+    </div>
+    <div class="pd1Right">
+      <img src="images/calendar.svg">
+      <span>Q1 2021</span>
+    </div>
+  </div>
+</div> 
+</div>
+</div>
+<div class="col-md-6">
+  <div class="projectContainer">
+    <div class="imageContainer">
+      <a href="#">
+       <img src="images/property1.png">
+       <div class="projectImgText">
+        <div class="projectImgTextHCont">
+          <h3>District One</h3>
+          <div class="hslash"></div>
+        </div>
+        <div class="propertyDescContainer bounceInUp">
+          <p class="propertyDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+          <div class="viewMoreContainer">
+            <span class="viewMore">VIEW MORE</span>
+            <img src="images/rightarrow.svg" class="viewMoreArrow">
+          </div>  
+        </div>
+      </div>
+    </a>
+  </div> 
+  <div class="propertyDetails">
+   <div class="pd1">
+     <div class="pd1left">
+      <img src="images/type.svg">
+      <span>Apartments</span>
+    </div>
+    <div class="pd1Right">
+      <img src="images/area.svg">
+      <span>890-2140 SQF</span>
+    </div>
+  </div>
+  <div class="pd1">
+   <div class="pd1left">
+    <img src="images/location.svg">
+    <span>Meydan</span>
+  </div>
+  <div class="pd1Right">
+    <img src="images/price.svg">
+    <span>AED 1.189.000</span>
+  </div>
+</div>
+<div class="pd2">
+ <div class="pd1left">
+  <img src="images/bed.svg">
+  <span>1-3 Bedroom</span>
+</div>
+<div class="pd1Right">
+  <img src="images/calendar.svg">
+  <span>Q1 2021</span>
+</div>
+</div>
+</div> 
+</div>
+</div>
+<div class="col-md-6">
+  <div class="projectContainer">
+    <div class="imageContainer">
+      <a href="#">
+       <img src="images/property1.png">
+       <div class="projectImgText">
+        <div class="projectImgTextHCont">
+          <h3>District One</h3>
+          <div class="hslash"></div>
+        </div>
+        <div class="propertyDescContainer bounceInUp">
+          <p class="propertyDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+          <div class="viewMoreContainer">
+            <span class="viewMore">VIEW MORE</span>
+            <img src="images/rightarrow.svg" class="viewMoreArrow">
+          </div>  
+        </div>
+      </div>
+    </a>
+  </div> 
+  <div class="propertyDetails">
+   <div class="pd1">
+     <div class="pd1left">
+      <img src="images/type.svg">
+      <span>Apartments</span>
+    </div>
+    <div class="pd1Right">
+      <img src="images/area.svg">
+      <span>890-2140 SQF</span>
+    </div>
+  </div>
+  <div class="pd1">
+   <div class="pd1left">
+    <img src="images/location.svg">
+    <span>Meydan</span>
+  </div>
+  <div class="pd1Right">
+    <img src="images/price.svg">
+    <span>AED 1.189.000</span>
+  </div>
+</div>
+<div class="pd2">
+ <div class="pd1left">
+  <img src="images/bed.svg">
+  <span>1-3 Bedroom</span>
+</div>
+<div class="pd1Right">
+  <img src="images/calendar.svg">
+  <span>Q1 2021</span>
+</div>
+</div>
+</div> 
+</div>
+</div>
+<div class="col-md-6">
+  <div class="projectContainer">
+    <div class="imageContainer">
+      <a href="#">
+       <img src="images/property1.png">
+       <div class="projectImgText">
+        <div class="projectImgTextHCont">
+          <h3>District One</h3>
+          <div class="hslash"></div>
+        </div>
+        <div class="propertyDescContainer bounceInUp">
+          <p class="propertyDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+          <div class="viewMoreContainer">
+            <span class="viewMore">VIEW MORE</span>
+            <img src="images/rightarrow.svg" class="viewMoreArrow">
+          </div>  
+        </div>
+      </div>
+    </a>
+  </div> 
+  <div class="propertyDetails">
+   <div class="pd1">
+     <div class="pd1left">
+      <img src="images/type.svg">
+      <span>Apartments</span>
+    </div>
+    <div class="pd1Right">
+      <img src="images/area.svg">
+      <span>890-2140 SQF</span>
+    </div>
+  </div>
+  <div class="pd1">
+   <div class="pd1left">
+    <img src="images/location.svg">
+    <span>Meydan</span>
+  </div>
+  <div class="pd1Right">
+    <img src="images/price.svg">
+    <span>AED 1.189.000</span>
+  </div>
+</div>
+<div class="pd2">
+ <div class="pd1left">
+  <img src="images/bed.svg">
+  <span>1-3 Bedroom</span>
+</div>
+<div class="pd1Right">
+  <img src="images/calendar.svg">
+  <span>Q1 2021</span>
+</div>
+</div>
+</div> 
+</div>
+</div>
+<div class="col-md-12">
+  <div class="paginationCont paginationMobile">
+    <ul class="paginationList">
+      <li><a href="#" class="active">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">6</a></li>
+      <li><a href="#" class="nextPage"><img src="images/next.png"></a></li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+<div class="col-md-4" id="mapshow" style="position: relative;">
+  <div class="mapControls">
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Search as I move the map</label>
+    </div>
+    <a href="#">Show Transit</a>
+  </div>
+  <div class="mapSection">
+    <div id="mapProperty" style="position: relative;width: 100%;height: 100%;"></div> 
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="paginationCont paginationDesktp">
+  <ul class="paginationList">
+    <li><a href="#" class="active">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#" class="nextPage"><img src="images/next.png"></a></li>
+  </ul>
+</div>
+<div class="newsLetter">
+ <h4>Our newsletter</h4>
+ <p>Sign up for our weekly newsletter for market updates </p>
+ <div class="newsletterF">
+  <input type="text" name="email" class="form-control" placeholder="Enter your e-mail">
+  <button type="button" class="newsletterBtn">SUBSCRIBE</button>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="footer">
+ <div class="container">
+  <div class="row">
+    <div class="col-md-3 footer1" style="padding-top: 10px;">
+     <img src="images/logo-black.svg">
+     <ul class="footerMenu">
+       <li><a href="#">About Us</a></li>
+       <li><a href="#">Our Agents</a></li>
+       <li><a href="#">Property Management</a></li>
+       <li><a href="#">Blog</a></li>
+       <li><a href="#">Contact Us</a></li>
+     </ul>
+   </div>
+   <div class="col-md-2 footer1">
+     <h4 class="FooterMH">BUY</h4>
+     <ul class="footerMList">
+       <li><a href="#">Al barari villas</a></li>
+       <li><a href="#">Emirates villas</a></li>
+       <li><a href="#">Valley villas</a></li>
+       <li><a href="#">Palm apartments</a></li>
+     </ul>
+   </div>
+   <div class="col-md-2 footer1">
+     <h4 class="FooterMH">SELL</h4>
+     <ul class="footerMList">
+       <li><a href="#">Khalifa villas</a></li>
+       <li><a href="#">Lime tree villas</a></li>
+       <li><a href="#">District one</a></li>
+       <li><a href="#">Burj royal villas</a></li>
+     </ul>
+   </div>
+   <div class="col-md-2 footer1">
+     <h4 class="FooterMH">RENT</h4>
+     <ul class="footerMList">
+       <li><a href="#">One palm</a></li>
+       <li><a href="#">Estate villas</a></li>
+       <li><a href="#">Shore apartments</a></li>
+       <li><a href="#">Green bay villas</a></li>
+     </ul>
+   </div>
+   <div class="col-md-3">
+    <div class="socialIcons">
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#" style="padding-left: 12px;padding-right: 12px;"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+      <div class="CurrencySelect">
+        <select class="form-control selectField" name="MaxBedroom">
+          <option>Currency</option> 
+          <option>AED</option> 
+          <option>USD</option> 
+          <option>RUS</option>  
+        </select>
+      </div>
+      <div class="areaSelect">
+       <a href="#" class="active">SQ FT</a>
+       <a href="#">SQ M</a>
+     </div>
+   </div>
+ </div>
+ <div class="hline"></div>
+</div>
+</div>
+<div class="container copyRightCont">
+  <div class="row">
+   <div class="col-md-8">
+     <p>2018 All Rights Reserved. Metropolitan Premium Properties®</p>
+   </div>
+   <div class="col-md-2" style="text-align: right;">
+     <a href="#">Privacy policy</a>
+   </div>
+   <div class="col-md-2" style="text-align: right;">
+     <a href="#">Terms of use</a>
+   </div>
+ </div>
+</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+<script src="js/scripts.js"></script>
+<script type="text/javascript">
+
+  $(".priceRange").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 1000000,
+    from: 200000,
+    to: 600000,
+    grid: false
+  });
+
+  $('.showmap').on('click', function(event) {
+    event.preventDefault();
+    $('#mapshow').slideToggle(400);
+  });
+
+  $('.search-select').select2({
+        minimumResultsForSearch: Infinity
+    });
+    $('.currencySelect').select2({
+        minimumResultsForSearch: Infinity
+    });
+    $('.location-select').select2({
+
+    });
+
+    $('.recomended').select2({
+        minimumResultsForSearch: Infinity
+    });
+</script>
+
+
+<script>
+  var geocoder, map, mylocation, marker, MarkerIndex, infowindow;
+  var $window = $(window);
+  var windowsize = $window.width();
+  var allMarkers = new Array();
+  var locationArr = [{lat: 25.0648198, lng: 55.169502, ref: 1, txt: 'AED 100000'}, {lat: 25.0758288, lng: 55.179612, ref: 2, txt: 'AED 200000'},{lat: 25.0868378, lng: 55.189722, ref: 3, txt: 'AED 300000'},{lat: 25.0978468, lng: 55.199832, ref: 1, txt: 'AED 400000'}];
+  function initMap() {
+
+    map = new google.maps.Map(document.getElementById('mapProperty'), {
+      zoom: 12,
+      center: new google.maps.LatLng(25.1127555, 55.1887018),
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      fullscreenControl: true,
+      mapTypeControl: false
+    });
+    for(var i = 0 ; i < locationArr.length; i++){        
+      var latlng = new google.maps.LatLng(locationArr[i]['lat'],locationArr[i]['lng']);
+      var finalLatLng = latlng;
+/* if (allMarkers.length != 0) {
+for (var j=0; j < allMarkers.length; j++) {
+var existingMarker = allMarkers[j];
+var pos = existingMarker.getPosition();
+if (latlng.equals(pos)) {
+var newLat = latlng.lat() + (Math.random() -1) / 1500;// * (Math.random() * (max - min) + min);
+var newLng = latlng.lng() + (Math.random() -1) / 1500;// * (Math.random() * (max - min) + min);
+finalLatLng = new google.maps.LatLng(newLat,newLng);
+}
+}
+} */
+
+var infoContent = '<p style="margin-bottom:0;font-weight:bold;">'+locationArr[i]['txt']+'</p>';
+infowindow = new google.maps.InfoWindow({
+  content: infoContent
+});
+infowindow.setPosition(latlng);
+infowindow.open(map);
+
+}
+} 
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD__FJYhUXG23iDkRUjm8Rinm0lByPJ-3E&callback=initMap">
+</script>
+
+</body>
+</html>
